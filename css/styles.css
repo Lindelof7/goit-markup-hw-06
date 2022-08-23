@@ -936,8 +936,12 @@ ul {
 }
 
 .input-check-btn {
+    appearance: none;
+    height: 15px;
+    width: 16px;
     margin-right: 8.3px;
-    outline: 2px solid black;
+    border: 2px solid black;
+    border-radius: 2px
 }
 
 .label-policy {
@@ -951,8 +955,29 @@ ul {
 }
 
 .modal-checkbox-policy {
+    position: relative;
     text-align: center;
     margin-top: 20px;
+}
+
+.checkbox-frame{
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    margin: auto;
+}
+.checkbox-frame-icon{
+    display: flex;
+    align-items: baseline;
+}
+
+
+.input-check-btn:checked {
+    background-image: url(../images/modal\ icon\ check\ .svg);
+    background-color: #2196F3;
+    background-size: contain;
+    background-origin: border-box;
+    border-color: #2196F3;
 }
 
 .modal-policy-link {
